@@ -1,0 +1,59 @@
+.button6 {
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.35);
+    border-left: 0.5px solid rgba(255, 255, 255, 0.35);
+    padding-left: 40px;
+    transition: 0.5s;
+    font-size: 1.5em;
+}
+
+.button6:hover {
+    padding-left: 0px;
+    padding-right: 40px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.button6 span {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 5px;
+    background: #04fe4d;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.5em;
+}
+
+.button6:hover span {
+    left: calc(100% - 55px);
+}
+
+.button6:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateX(-170px) skewX(30deg);
+    transition: 0.75s ease-in-out;
+} 
+
+.button6:hover:after {
+    transform: translateX(170px)skewX(30deg);
+}

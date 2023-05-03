@@ -1,0 +1,48 @@
+.button4 {
+    font-size: 1.5em;
+    border: none;
+    background: none;
+    color: white;
+    padding: 10px 40px;
+    transform: skew(-15deg);
+    cursor: pointer;
+    transition: all .2s;
+    background-color: rgb(152, 13, 251);
+    box-shadow: 15px 15px 0px black;
+}
+
+.button4:hover {
+    padding-right: 60px;
+}
+
+.arrow {
+    margin-left: 5px;
+    position: relative;
+}
+
+.arrow i {
+    transform: skewX(15deg);
+    color: white;
+    transition: .2s;
+    animation: color 2 infinite;
+}
+
+.arrow i:nth-child(2) {
+    position:absolute;
+    right: 0;
+
+}
+
+.arrow i:nth-child(3) {
+    position:absolute;
+    right: 0;
+ 
+}
+
+.button4:hover i:nth-child(2){
+    right: -15px;
+}
+
+.button4:hover i:nth-child(3){
+    right: -30px;
+}

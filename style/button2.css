@@ -1,0 +1,33 @@
+.button2 {
+    background: none;
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Hind', sans-serif;
+    border: solid 3px white;
+    font-weight: bold;
+    transition: .3s linear;
+    cursor: pointer;
+    position: relative;
+}
+
+.button2:hover {
+    color: black;
+}
+
+.button2::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 55px;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    z-index: -1;
+    transition: .4s linear;
+}
+
+.button2:hover::before{
+    width: 195px;
+}

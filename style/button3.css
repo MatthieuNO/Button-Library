@@ -1,0 +1,18 @@
+.button3 {
+    font-size: 1.5em;
+    padding: 15px 45px;
+    background: #ffd17b;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    box-shadow:  0 6px #efa424;
+}
+
+
+
+.button3:active {
+    box-shadow: 0 0 #efa424;
+    top: 6px;
+}
